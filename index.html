@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <title>Auditorias</title>
+</head>
+
+<body>
+    <div class="slider">
+        <div class="container__slider">
+            <div class="item__slider fade">
+                <img src="images/image1.jpg" alt="auditoria1" loading="lazy">
+            </div>
+            <div class="item__slider fade">
+                <img src="images/image2.jpg" alt="auditoria2" loading="lazy">
+            </div>
+            <div class="item__slider fade">
+                <img src="images/image3.jpg" alt="auditoria3" loading="lazy">
+            </div>
+            <div class="item__slider fade">
+                <img src="images/image4.jpg" alt="auditoria4" loading="lazy">
+            </div>
+        </div>
+
+        <div class="direcciones">
+            <a href="#" class="prev" onclick="avanzaSlider(-1)">&#10094;</a>
+            <a href="#" class="next" onclick="avanzaSlider(1)">&#10095;</a>
+        </div>
+
+        <div class="barras">
+            <span class="barra active" onclick="posicionSlider(1)"></span>
+            <span class="barra" onclick="posicionSlider(2)"></span>
+            <span class="barra" onclick="posicionSlider(3)"></span>
+            <span class="barra" onclick="posicionSlider(4)"></span>
+        </div>
+    </div>
+
+    <form action="" method="POST" class="form" name="form">
+        <div class="container__auditoria">
+            <span class="auditoria">Auditorias</span>
+        </div>
+
+        <div class="container__form">
+            <div class="uk-margin">
+                <label class="uk-form-label uk-text-medium" for="form-stacked-select">Auditorías por su lugar de aplicación</label>
+                <div class="uk-form-controls">
+                    <select class="uk-select" id="form-stacked-select">
+                        <option>Auditoría externa</option>
+                        <option>Auditoría interna</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="uk-margin">
+                <label class="uk-form-label" for="form-stacked-select">Auditorías por su área de aplicación</label>
+                <div class="uk-form-controls">
+                    <select class="uk-select seleccion" id="form-stacked-select">
+                        <option>uditoría financiera</option>  
+                        <option>Auditoría administrativa</option>  
+                        <option>Auditoría operacional</option>  
+                        <option>Auditoría integral</option>  
+                        <option>Auditoría gubernamental</option>  
+                        <option>Auditoría de sistemas</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="uk-margin">
+                <label class="uk-form-label" for="form-stacked-select">Auditorías especializadas en áreas
+                    específicas</label>
+                <div class="uk-form-controls">
+                    <select class="uk-select select" id="form-stacked-select">
+                        <option>uditoría al área médica (evaluación médico-sanitaria)</option>  
+                        <option>Auditoría al desarrollo de obras y construcciones (evaluación de ingeniería)</option>  
+                        <option>Auditoría fiscal</option>  
+                        <option>Auditoría laboral</option>  
+                        <option>Auditoría de proyectos de inversión</option>  
+                        <option>Auditoría a la caja chica o caja mayor (arqueos)</option>  
+                        <option>Auditoría al manejo de mercancías (inventarios)</option>  
+                        <option>Auditoría ambiental</option>  
+                        <option>Auditoría de sistemas</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="uk-margin hidden">
+                <label class="uk-form-label" for="form-stacked-select">Auditoría de sistemas computacionales</label>
+                <div class="uk-form-controls">
+                    <select class="uk-select" id="form-stacked-select">
+                        <option>uditoría informática</option>  
+                        <option>Auditoría con la computadora</option>  
+                        <option>Auditoría sin la computadora</option>  
+                        <option>Auditoría a la gestión informática</option>  
+                        <option>Auditoría al sistema de cómputo</option>  
+                        <option>Auditoría alrededor de la computadora</option>  
+                        <option>Auditoría de la seguridad de sistemas computacionales</option>  
+                        <option>Auditoría a los sistemas de redes</option>  
+                        <option>Auditoría integral a los centros de cómputo</option>
+                        <option>Auditoría ISO-9000 a los sistemas computacionales</option>  
+                        <option>Auditoría outsourcing</option>   
+                        <option>Auditoría ergonómica de sistemas computacionales</option>
+                    </select>
+                </div>
+            </div>
+            <button class="uk-button uk-button-primary">Consultar</button>
+        </div>
+    </form>
+
+
+    <script src="/scripts/slider.js"></script>
+    <script src="/scripts/cuadro.js"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+</body>
+
+</html>
